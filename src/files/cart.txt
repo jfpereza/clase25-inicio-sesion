@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "stock": 3,
+    "name": "Arroz-carne-carne-cart",
+    "category": "Especial",
+    "price": "10",
+    "thumbnail": "http://localhost:8081/images/1638506173088Arroz-carner-cerdo.jpg",
+    "available": false
+  },
+  {
+    "id": 2,
+    "stock": 3,
+    "name": "Arroz-carne-cerdo-cart",
+    "category": "Especial",
+    "price": "10",
+    "thumbnail": "http://localhost:8081/images/1638506173088Arroz-carner-cerdo.jpg",
+    "available": false
+  }
+]

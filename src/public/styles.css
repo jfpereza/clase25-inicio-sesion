@@ -1,0 +1,107 @@
+.btn-outline-info {
+    color: #0df0f0;
+    border-color: #273f53;
+    background-color: #6a8f97;
+    width: 156px;
+}
+
+.main-container {
+    padding: 77px 0;
+    background-image: url(./images/photo1jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    width: 632px;
+    margin: auto;
+    border-radius: 5px;
+    height: 100%;
+    padding: 15px 25px;
+    /* background-image: url(./images/fondo-parrilla.jpg); */
+    background-repeat: no-repeat;
+
+}
+
+.form {
+    padding-top: 25px;
+}
+
+.title {
+    font: optional;
+    text-align: center;
+    font-family: emoji;
+    margin: 28px;
+    color: rgb(5, 252, 252);
+    box-shadow: 0px 2px;
+
+}
+
+.label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.form-input {
+    margin-bottom: 25px;
+}
+
+.image-text {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(5, 252, 252);
+}
+
+.submit-button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(138, 248, 64);
+}
+
+.submit-button:hover {
+    background-color: rgb(100, 179, 48);
+}
+
+.prod-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    height: 300px;
+    padding: 15px 10px;
+    border: 1px solid rgb(129, 102, 102);
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#preview {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container1 {
+    background-color: aqua;
+}
+
+.container2 {
+    background-color: blueviolet;
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "spiderman",
+    "last_name": "delacalle",
+    "age": 25,
+    "hasProduct": false
+  },
+  {
+    "id": 2,
+    "name": "batman",
+    "last_name": "delacalle",
+    "age": 35,
+    "hasProduct": false
+  }
+]

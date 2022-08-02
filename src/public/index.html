@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>COMIDA DE LA CASA</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h1 class="title">Registra Tu Producto</h1>
+
+            <form id="productForm" name="productForm" class="row g-3 ">
+                <div class="col-md-6 ">
+                    <div class="input-group">
+                        <span class="input-group-text" id="Name">User</span>
+                        <input class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text" id="Category">Category</span>
+                        <select class="form-select" name="category" id="category" placeholder="Category"
+                            aria-label="Category">
+                            <option value="Especial" label="Especial" selected></option>
+                            <option value="Normal" label="Normal"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text" id="Price">Price</span>
+                        <input class="form-control" name="price" id="price" placeholder="$" required>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input class="form-control" type="file" accept="image/*" name="image" id="image" required>
+                        <label class="input-group-text" for="image">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <button type="button" class="btn btn-outline-info" onclick="location.href='/view/products'">Img
+                            Cloud</button>
+
+                    </div>
+                    <a href="./indexLogin/indexa.html">login</a><br>
+
+
+                </div>
+
+                <!-- <div style="width:100%; padding-top:100px">
+                    <p class="image-text">Imagen de Producto</p>
+                </div> -->
+                <!-- ---------------imagen producto ----------------->
+                <!-- <img id="preview">
+                <div style="margin-top:30px; display:flex; justify-content: center;">
+                    <input type="submit" class="submit-button">
+                </div> -->
+            </form>
+
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-12">
+                <!-- PRODUCTOS -->
+                <h2>Productos</h2>
+                <div class="align-items-center" style="justify-content: center;">
+                    <div id="prodTable2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT -->
+    <div class="box1">
+        <h1>Base de Productos</h1>
+        <input id="user" type="text" class="form-control" placeholder=" username" aria-label=" username"
+            aria-describedby="basic-addon2">
+
+        <input id="mensaje" type="text" class="form-control" placeholder=" mensaje" aria-label=" mensaje"
+            aria-describedby="basic-addon2">
+
+        <div id="container">
+            <p id="log"></p>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
